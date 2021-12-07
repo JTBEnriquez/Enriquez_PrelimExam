@@ -1,0 +1,12 @@
+- hosts: all
+  become: true
+  task:
+
+  - name: install python3
+    apt:
+      name: python3
+
+  - name: install pip3
+    apt:
+      name: pip3 
+
