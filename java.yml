@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install java open-jdk
+    apt:
+     name: default-jdk

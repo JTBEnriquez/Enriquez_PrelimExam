@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: true
+  tasks:
+
+  - name: Create Motd
+      src: motd-facts.j2
+      dest: /etc/motd
+      owner: root
+      group: root
+      mode: 0644
